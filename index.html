@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alixir Frontend</title>
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- TEST MODALE -->
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="icons/shakeHandIcon.png" alt="shake hands icon" class="shakeHandIcon"/>
+        <label class="modal-label">Become an affiliate</label>
+      </div>
+      <div class="join-offer-container">
+        <span class="join-offer">Join Landify affiliate</span>
+        <div class="join-offer join-offer-span2">
+          <span>program and earn</span>
+          <span class="modal-discount">25%</span>
+        </div>
+        <span class="join-offer">of every purchase</span>
+      </div>
+      <button class="modal-button-container">
+        <label class="modal-button-label">Register and start to earn</label>
+        <img src="icons/arrow-icon.png" alt="Arrow Right" class="register-arrow"/>
+      </button>
+    </div>
+  </div>  
+  
+  <!-- FIN TEST MODALE -->
+  
+  <body>
+    <!-- Landing Page en HTML vanilla -->
+    <section class="main-section">
+        <nav class="navbar">
+            <!-- Nav gauche : Logo et liens -->
+            <div class="navbar-left">
+              <img src="landifyLogo.png" alt="Landify Logo" class="landifyLogo" />
+              <ul class="navbar-links">
+                <li class="menu-item"><a class="menu-label" href="#features">Features</a></li>
+                <li class="menu-item"><a class="menu-label" href="#pricing">Pricing</a></li>
+                <li class="menu-item"><a class="menu-label" href="#careers">Careers</a></li>
+                <li class="menu-item"><a class="menu-label" href="#help">Help</a></li>
+              </ul>
+            </div>
+          
+            <!-- Nav droite : Boutons sotres -->
+            <div class="navbar-right">
+              <button class="storeBadgeContainer">
+                <img src="googleStore.png" alt="Google Logo" class="googleStoreLogo" />
+              </button>
+              <button class="storeBadgeContainer">
+                <img src="appStore.png" alt="Apple Logo" class="appleStoreLogo" />
+              </button>
+            </div>
+          </nav>
+          
+
+          <!-- Container du milieu -->
+        <div class="wrapper-bloc-middle">
+            <div class="infosArea">
+                <div class="infos-header">
+                    <h1 class="slogan-title">The easiest way to manage projects</h1>
+                    <span class="slogan-text">From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done.</span>
+                </div>
+                <div class="button-wrapper">
+                    <button class="get-started-button">
+                        <span class="label-get-started">Get Started</span>
+                    </button>
+                    <button class="watch-video-button">
+                        <img src="playVideoIcon.png" alt="Icone Play Video" class="playVideoIcon" />
+                        <span class="label-watch-video">Watch Video</span>
+                    </button>
+                </div>
+            </div>
+            <div class="phoneArea">
+                <img src="Mobile.png" alt="image iphone x" class="mobileImage" />
+            </div>
+        </div>
+    </section>
+
+    <div id="testimonials-root"></div>
+    <div id="logosClients-root"></div>
+    <script type="module" src="components/testimonials.jsx"></script>
+    <script type="module" src="components/logosClients.jsx"></script>
+    
+
+    <footer class="footer-hero">
+      <div class="footer-wrapper">
+        <span class="footer-label">© 2021 Landify UI Kit. All rights reserved</span>
+        <div class="social-links">
+          <ul class="social-links-list">
+            <li><a href="" target="_blank"><img src="icons/insta-icon.png" alt="instagram" class="social-icon" /></a></li>
+            <li><a href="" target="_blank"><img src="icons/dribble-icon.png" alt="dribble" class="social-icon" /></a></li>
+            <li><a href="" target="_blank"><img src="icons/twitter-icon.png" alt="twitter" class="social-icon" /></a></li>
+            <li><a href="" target="_blank"><img src="icons/youtube-icon.png" alt="youtub" class="social-icon" /></a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script>
+      // acces a la modale
+      let modal = document.getElementById("modal");
+    
+      // Fonction pour afficher la modale
+      function showModal() {
+        modal.style.display = "block";
+      }
+    
+      // ferme la modal si click hors champs
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    
+      // détection position du curseur souris
+      window.addEventListener("mousemove", function(event) {
+        // verification si le curseur est dans le coin supérieur droit
+        let x = event.clientX; // Position X du curseur
+        let y = event.clientY; // Position Y du curseur
+        let screenWidth = window.innerWidth; // largeur fenêtre
+        let screenHeight = window.innerHeight; // hauteur fenêtre
+    
+        // Affiche la modale si le curseur est dans le coin supérieur droit (10px de marge)
+        if (x > screenWidth - 100 && y < 100) {
+          showModal();
+        }
+      });
+    </script>
+    
+    
+    
+  </body>
+</html>
