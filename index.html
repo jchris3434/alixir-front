@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <!-- TEST MODALE -->
+  <!-- MODALE -->
 
   <div id="modal" class="modal">
     <div class="modal-content">
@@ -33,7 +33,7 @@
     </div>
   </div>  
   
-  <!-- FIN TEST MODALE -->
+  <!-- FIN MODALE -->
   
   <body>
     <!-- Landing Page en HTML vanilla -->
@@ -106,36 +106,7 @@
       </div>
     </footer>
 
-    <script>
-      // acces a la modale
-      let modal = document.getElementById("modal");
-    
-      // Fonction pour afficher la modale
-      function showModal() {
-        modal.style.display = "block";
-      }
-    
-      // ferme la modal si click hors champs
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    
-      // détection position du curseur souris
-      window.addEventListener("mousemove", function(event) {
-        // verification si le curseur est dans le coin supérieur droit
-        let x = event.clientX; // Position X du curseur
-        let y = event.clientY; // Position Y du curseur
-        let screenWidth = window.innerWidth; // largeur fenêtre
-        let screenHeight = window.innerHeight; // hauteur fenêtre
-    
-        // Affiche la modale si le curseur est dans le coin supérieur droit (10px de marge)
-        if (x > screenWidth - 100 && y < 100) {
-          showModal();
-        }
-      });
-    </script>
+    <script src="scripts/modale.js"></script>
     
     
     

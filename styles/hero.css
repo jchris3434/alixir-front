@@ -211,7 +211,6 @@ html {
     padding-left: 0.5rem;
 }
 
-/* tempo jc */
 
 .mobileImage {
     width: 45%;
@@ -404,19 +403,19 @@ html {
 .footer-hero {
     width: 100%;
     height: 4.5rem;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     background: #000000;
-    padding: 0 2rem; 
-    box-sizing: border-box; 
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .footer-wrapper {
-    display: flex; 
-    justify-content: space-between; 
-    width: 100%; 
-    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-label {
@@ -430,30 +429,30 @@ html {
 
 .social-links {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .social-links-list {
     list-style: none;
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
+    margin: 0;
+    padding: 0;
+    display: flex;
     gap: 1rem;
     padding-top: 0.2rem;
 }
 
 .social-links-list li {
-    display: inline-block; 
+    display: inline-block;
 }
 
 .social-icon {
     width: 24px;
     height: auto;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-    transform: scale(1.5); 
+    transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
@@ -468,10 +467,10 @@ html {
 }
 
 
-/* TEST MODALE */
+/* MODALE */
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -480,9 +479,9 @@ html {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -492,10 +491,10 @@ html {
     height: 25rem;
     max-width: 30rem;
     background: #FFE500;
-    border-radius: 24px ;
-  }
+    border-radius: 24px;
+}
 
-  .modal-header {
+.modal-header {
     display: flex;
     align-items: center;
     width: 291px;
@@ -503,39 +502,37 @@ html {
     gap: 20px;
     padding-top: 1rem;
     padding-left: 1.2rem;
-  }
+}
 
-  .shakeHandIcon {
+.shakeHandIcon {
     height: 38px;
-    /* padding: 4px 8px 4px 8px; */
     gap: 0px;
     border-radius: 100px;
-    
-  }
+}
 
-  .modal-label {
+.modal-label {
     width: 223px;
     height: 30px;
     gap: 0px;
     color: #000000;
     font-family: Inter;
-font-size: 18px;
-font-weight: 600;
-line-height: 30px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-  }
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
 
-  .join-offer-container {
+.join-offer-container {
     width: 517px;
     height: 180px;
 
     padding-top: 1rem;
     padding-left: 1.2rem;
-  }
+}
 
-  .join-offer {
+.join-offer {
     font-family: Inter;
     font-size: 37px;
     font-weight: 600;
@@ -544,27 +541,25 @@ text-decoration-skip-ink: none;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #000000;
-  }
+}
 
-  .modal-discount {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    width: 75px;
-height: 45px;
-/* padding: 6px 10px 6px 10px; */
-border-radius: 100px ;
-background: #000000;
-color: #FFE500;
-font-family: Inter;
-font-size: 25px;
-/* font-weight: 700; */
-  }
-
-  .join-offer-span2 {
+.modal-discount {
     display: flex;
     align-items: center;
-    gap: 8px; 
+    justify-content: center;
+    width: 75px;
+    height: 45px;
+    border-radius: 100px;
+    background: #000000;
+    color: #FFE500;
+    font-family: Inter;
+    font-size: 25px;
+}
+
+.join-offer-span2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .modal-button-container {
@@ -573,7 +568,6 @@ font-size: 25px;
     justify-content: center;
     width: 90%;
     height: 50px;
-    /* padding: 21px 149px 24px 160px; */
     gap: 0px;
     border-radius: 8px;
     background: #0B0D17;
@@ -583,24 +577,23 @@ font-size: 25px;
 }
 
 .modal-button-label {
-    
+
     font-family: Inter;
-font-size: 15px;
-font-weight: 400;
-line-height: 25px;
-text-align: center;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #FFE500;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFE500;
 }
 
 .register-arrow {
     width: 20px;
-height: 12px;
-padding-left: 0.5rem;
-padding-top: 0.3rem;
+    height: 12px;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
 
 }
-
