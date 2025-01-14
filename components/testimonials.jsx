@@ -33,14 +33,14 @@ const Testimonials = () => {
     <section className='testimonials-wrapper'>
       <h1 className='testi-title'>Our clients speak</h1>
       <div className="testimonials-card-container">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial-card">
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="testimonial-card">
             <div className="testimonial-text-wrapper">
               <h3 className='testimonial-client-title'>{testimonial.title}</h3>
               <span className='testimonial-client-comment'>{testimonial.body}</span>
             </div>
             <div className="testimonial-client-wrapper">
-              <img className="testimonial-client-avatar" src={testimonial.personPicture} alt={`Photo of ${testimonial.personName}`} />
+              <img className="testimonial-client-avatar" src={testimonial.personPicture} alt={testimonial.personName} />
               <span className="testimonial-client-name">{testimonial.personName}</span>
               <span className="testimonial-client-company">{testimonial.personCompany}</span>
             </div>

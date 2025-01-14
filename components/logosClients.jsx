@@ -24,8 +24,8 @@ const LogosClients = () => {
   return (
     <section className="logos-section">
       <div className="logos-container">
-        {logos.map((logo, index) => (
-          <div key={index} className="logo-item">
+        {logos.map((logo) => (
+          <div key={logo} className="logo-item">
             <img src={`/logos/${logo}`} alt={logo.split('.')[0]} className="logo-img" />
           </div>
         ))}
